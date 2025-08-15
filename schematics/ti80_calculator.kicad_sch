@@ -20955,7 +20955,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "►"
+		(property "Value" "◄"
 			(at 205.74 133.604 0)
 			(effects
 				(font
@@ -27781,7 +27781,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "◄"
+		(property "Value" "►"
 			(at 205.74 125.984 0)
 			(effects
 				(font
