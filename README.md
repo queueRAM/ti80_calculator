@@ -12,13 +12,15 @@ Full schematic is included in this repository along with the notes used to marku
 The schematic is broken into different sections grouping related components. It does not include
 all the individual test points, but includes the ones of interest. Full schematic is included in
 the repository as [TI-80 schematic PDF](schematics/ti80_schematic_rev1.pdf) or KiCad.
+
 ![TI-80 Schematic](images/ti80_schematic_sm.png)
 
 The PCB was reverse engineered using clean photos of the front and back PCB and marking up
 the traces in Inkscape and probing individual pins and vias. The marked up document
 can be viewed from the repository. It is stored as [TI-80 PCB layers Inkscape SVG](images/ti80_pcb_layers.svg)
 with layers.
-![Inkcape PCB tracing](images/ti80_pcb_layers_sm.png)
+
+![Inkcape PCB Tracing](images/ti80_pcb_full_layers_sm.png)
 
 ### Notable Parts:
 
