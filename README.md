@@ -8,6 +8,18 @@ and LCD controller. These devices are wired together on a shared 8-bit bidirecti
 and 15 bit address bus. There are separate chip select/chip enable control pins going to the
 individual ROM, RAM, LCD modules.
 
+Full schematic is included in this repository along with the notes used to markup the PCB photos.
+The schematic is broken into different sections grouping related components. It does not include
+all the individual test points, but includes the ones of interest. Full schematic is included in
+the repository as [TI-80 schematic PDF](schematics/ti80_schematic_rev1.pdf) or KiCad.
+![TI-80 Schematic](images/ti80_schematic_sm.png)
+
+The PCB was reverse engineered using clean photos of the front and back PCB and marking up
+the traces in Inkscape and probing individual pins and vias. The marked up document
+can be viewed from the repository. It is stored as [TI-80 PCB layers Inkscape SVG](images/ti80_pcb_layers.svg)
+with layers.
+![Inkcape PCB tracing](images/ti80_pcb_layers_sm.png)
+
 ### Notable Parts:
 
 REFDES | Footprint | Marking   | Manufacturer | Description       | Datasheet?
@@ -22,7 +34,7 @@ REFDES | Footprint | Marking   | Manufacturer | Description       | Datasheet?
 2. Pin 80 is unconnected, but strobes low for the duration of every external bus access (ROM, RAM, LCD)
 3. Pin 52 is connected to a pull-up resistor R2 (1MΩ) so likely some sort of input. Tying this to GND doesn’t have obvious side effects
 4. Pin 50 is wired out to a test pad, but not anything else. Monitoring it, seems to remain high
-5. J5 shorts one of the diodes used for reverse battery protection. This diode would like cause additional voltage drop and calculator becoming unusable due to the lower voltage powering the LCD
+5. J5 shorts one of the diodes used for reverse polarity protection. This diode would like cause additional voltage drop and calculator becoming unusable due to the lower voltage powering the LCD
 6. Calculator remains powered with only one battery installed, preserving the contents of SRAM. The slide switch in the battery compartment keeps /RST asserted while changing batteries. However, if manually de-asserted, the CPU, RAM, and ROM continue to run properly at 3V. The contrast of the LCD makes it unusable in this state.
 7. J17/J18 control which CPU pin is connected to ROM /CE (fitted J17 = pin 18, not-fitted J18 = pin 43)
 
@@ -35,18 +47,14 @@ that can keep the SRAM powered by just one button cell while the batteries are c
 the data is retained. The switch also holds the CPU and LCD in reset by asserting the /RST pin
 while the battery compartment slide switch is in the change battery position.
 
-## Schematic
-Full schematic is included in this repository along with the notes used to markup the PCB photos.
-The schematic is broken into different sections grouping related components and was
-
 ## Firmware
 The TI-80 firmware is baked into the ROMs on the calculator and it is not upgradable.
 The ROM is split across 16KB embedded inside the main CPU ASIC (marking T6M53A)
 and 32KB in the external ROM chip (marking LH5359).
 
 There are two known public versions of the TI-80 firmware: 3.0 and 4.0. The firmware version
-can be verified by entering the self-test mode with Mode / Alpha / S. Zeroko's ti80doc notes,
-referenced below document the differences between the two ROMs.
+can be verified by entering the self-test mode with `Mode` | `Alpha` | `S`. Zeroko's ti80doc
+notes, referenced below document the differences between the two ROMs.
 
 ## Graph Link
 The TI-80 does not contain a graph link port in the consumer retail versions, however, the
