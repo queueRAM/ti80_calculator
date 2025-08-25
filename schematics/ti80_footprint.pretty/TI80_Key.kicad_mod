@@ -7,7 +7,7 @@
 		(at 0.3 3.9 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "2cde3984-7aec-4d87-b099-f1e8307b46a4")
+		(uuid "19c2e2a6-a0a6-477f-af0d-b4bc7256fea8")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 -5.2 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "e477c537-b93d-45f5-b285-66756133c33e")
+		(uuid "55d19d28-67b2-4c70-b9a9-bbb0328284ef")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b5e848ee-eb6f-4b87-a812-3f4151f7f7b1")
+		(uuid "30b7c939-06d1-486c-b128-6a1968c2c996")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "6b10095f-f809-417c-a8bc-8ad1cbb8cd81")
+		(uuid "3ada0136-3368-4634-85e4-acdae76c4502")
 		(effects
 			(font
 				(size 1 1)
@@ -67,45 +67,45 @@
 		)
 	)
 	(pad "1" smd custom
-		(at -2.9 -0.3)
-		(size 0.25 1.4)
+		(at -3 0 90)
+		(size 0.25 0.25)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(options
 			(clearance outline)
-			(anchor rect)
+			(anchor circle)
 		)
 		(primitives
-			(gr_line
-				(start -0.1 0.45)
-				(end 3.3 2.75)
-				(width 0.3)
-			)
 			(gr_arc
-				(start -0.1 0.3)
-				(mid 2.123543 -2.597777)
-				(end 5.498076 -1.2)
+				(start -2.598076 1.5)
+				(mid 0.776457 0.102223)
+				(end 3 3)
 				(width 0.3)
 			)
 			(gr_line
-				(start 0.3 -0.7)
-				(end 4.5 1.8)
+				(start 3 3.15)
+				(end -0.4 5.45)
 				(width 0.3)
 			)
 			(gr_line
-				(start 0.95 -1.85)
-				(end 5.25 0.65)
+				(start 2.6 2)
+				(end -1.6 4.5)
 				(width 0.3)
 			)
 			(gr_line
-				(start 5.599038 -1)
-				(end 2.495159 -2.672557)
+				(start 1.95 0.85)
+				(end -2.35 3.35)
+				(width 0.3)
+			)
+			(gr_line
+				(start -2.699038 1.7)
+				(end 0.404841 0.027443)
 				(width 0.3)
 			)
 		)
 		(uuid "aa89ca67-67ea-4bd8-bd3c-32865c4b6868")
 	)
 	(pad "2" smd custom
-		(at 2.8875 0.3 180)
+		(at 2.999999 0 270)
 		(size 0.25 0.25)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 90)
@@ -114,41 +114,30 @@
 			(anchor circle)
 		)
 		(primitives
-			(gr_poly
-				(pts
-					(xy 0.122598 0.599386) (xy 0.103934 0.644446) (xy 0.069446 0.678934) (xy 0.024386 0.697598) (xy -0.024386 0.697598)
-					(xy -0.069446 0.678934) (xy -0.103934 0.644446) (xy -0.122598 0.599386) (xy -0.125 0.575) (xy -0.125 -0.575)
-					(xy -0.122598 -0.599386) (xy -0.103934 -0.644446) (xy -0.069446 -0.678934) (xy -0.024386 -0.697598)
-					(xy 0.024386 -0.697598) (xy 0.069446 -0.678934) (xy 0.103934 -0.644446) (xy 0.122598 -0.599386)
-					(xy 0.125 -0.575) (xy 0.125 0.575)
-				)
-				(width 0)
-				(fill yes)
-			)
 			(gr_line
-				(start -0.1125 0.45)
-				(end 3.6875 2.55)
+				(start -2.598076 1.499999)
+				(end 0 0.099999)
 				(width 0.3)
 			)
 			(gr_arc
-				(start -0.1125 0.3)
-				(mid 2.111043 -2.597777)
-				(end 5.485576 -1.2)
+				(start -2.598076 1.499999)
+				(mid 0.776457 0.102222)
+				(end 3 2.999999)
 				(width 0.3)
 			)
 			(gr_line
-				(start 5.485576 -1.2)
-				(end 2.8875 -2.6)
+				(start 2.5 1.699999)
+				(end -1.8 4.299999)
 				(width 0.3)
 			)
 			(gr_line
-				(start 1.2875 -2.1)
-				(end 5.0875 0.3)
+				(start 1.6 0.599999)
+				(end -2.2 2.999999)
 				(width 0.3)
 			)
 			(gr_line
-				(start 0.3875 -1)
-				(end 4.6875 1.6)
+				(start 3 3.149999)
+				(end -0.8 5.249999)
 				(width 0.3)
 			)
 		)
