@@ -116,7 +116,7 @@
 	)
 	(fp_line
 		(start 14.4 3.4)
-		(end 14.4 -3.58)
+		(end 14.4 -3.48)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -160,12 +160,6 @@
 		(size 6 2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "fe0d0201-7a31-48f6-99f7-c5b8491a028e")
-	)
-	(pad "" smd rect
-		(at 10.8 2)
-		(size 6 2)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "7cecbbc5-13d0-48e0-a7c5-eeda39413dad")
 	)
 	(pad "" np_thru_hole circle
 		(at 11.4 2)
@@ -269,6 +263,12 @@
 		(size 0.6 2.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "f5c041ea-9044-4801-9857-2eb381d996e0")
+	)
+	(pad "16" smd rect
+		(at 10.8 2)
+		(size 6 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7cecbbc5-13d0-48e0-a7c5-eeda39413dad")
 	)
 	(embedded_fonts no)
 )
