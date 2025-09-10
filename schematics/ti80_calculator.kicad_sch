@@ -20082,7 +20082,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1210_3225Metric"
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder"
 			(at 264.16 106.68 0)
 			(effects
 				(font
@@ -20880,7 +20880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1210_3225Metric"
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder"
 			(at 250.19 106.68 0)
 			(effects
 				(font
@@ -21273,7 +21273,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1210_3225Metric"
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder"
 			(at 250.19 78.74 0)
 			(effects
 				(font
