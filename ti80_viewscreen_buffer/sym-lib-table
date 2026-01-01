@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Toshiba_74xx")(type "KiCad")(uri "${KIPRJMOD}/Toshiba_74xx.kicad_sym")(options "")(descr ""))
+)

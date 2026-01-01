@@ -1,6 +1,7 @@
 # TI-80 Calculator Reverse Engineering
 
 This repository contains information about the TI-80 graphing calculator hardware and firmware.
+Both the main PCB from the TI-80 and the TI-80 ViewScreen capable buffer board are captured.
 
 ## Hardware
 The hardware architecture contains four main devices: CPU ASIC, external ROM, external RAM,
@@ -21,6 +22,12 @@ can be viewed from the repository. It is stored as [TI-80 PCB layers Inkscape SV
 with layers.
 
 ![Inkcape PCB Tracing](images/ti80_pcb_full_layers_sm.png)
+
+Additionally, included is the [TI-80 ViewScreen Buffer Board Schematic](ti80_viewscreen_buffer/ti80_viewscreen_buffer.pdf).
+This board has two 74HC244 3-state octal buffers which pass take LCD commands sent across a ribbon cable and make
+them available to the ViewScreen through the 26-pin ultra thin D-Sub cable.
+
+![TI-80 ViewScreen Buffer Board Schematic](images/ti80_viewscreen_buffer_sm.png)
 
 ### Notable Parts:
 
@@ -44,7 +51,7 @@ REFDES | Footprint | Marking   | Manufacturer | Description       | Datasheet?
 Most TI graphing calculators store programs in RAM and use a button cell battery for data retention
 while swapping out the main batteries. The TI-80 also stores programs in RAM, but entirely powers
 from two CR2032 batteries with no backup battery. Instead, it employs a novel physical switch in
-the battery compartment that encourages the user to change one battery at a time and circutry inside
+the battery compartment that encourages the user to change one battery at a time and circuitry inside
 that can keep the SRAM powered by just one button cell while the batteries are changed, and so
 the data is retained. The switch also holds the CPU and LCD in reset by asserting the /RST pin
 while the battery compartment slide switch is in the change battery position.
